@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+  <title>Happy Birthday Chika</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- LOCK SCREEN -->
+  <div id="lockScreen">
+    <div class="lock-stars" id="stars"></div>
+    <div class="lock-time" id="clockTime">00:00</div>
+    <div class="lock-date" id="clockDate">Monday, January 1</div>
+    
+    <div class="notif-card">
+      <div class="notif-icon">🎉</div>
+      <div>
+        <div class="notif-from">From</div>
+        <div class="notif-sender">Davey</div>
+        <div class="notif-preview">Hii Mama, I've got something special for you...</div>
+      </div>
+    </div>
+    
+    <button class="unlock-btn" id="unlockBtn">UNLOCK</button>
+  </div>
+
+  <!-- BIRTHDAY PAGE -->
+  <div id="birthdayPage">
+    <div class="hearts-bg" id="heartsContainer"></div>
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- INITIAL MESSAGE -->
+    <div id="mainMessage" class="main-msg">
+      <h1>Happy Birthday</h1>
+      <p id="recipientName">Chika</p>
+      <button class="surprise-btn" id="surpriseBtn">🎁 Click for Surprise</button>
+    </div>
+
+    <!-- SLIDESHOW -->
+    <div id="slideshow" class="slideshow">
+      <div class="slides-wrap" id="slidesWrap"></div>
+      <div class="slideshow-footer">
+        <button class="mute-btn" id="muteBtn">🔊</button>
+        <div class="dots" id="dots"></div>
+      </div>
+    </div>
+
+    <!-- LOVE LETTER -->
+    <div id="loveLetter" class="love-letter">
+      <div class="letter-content">
+        <h2>A Letter for You</h2>
+        <p id="typedText"></p>
+        <div id="letterFooter" class="letter-footer">
+          <p>With all my love,</p>
+          <p class="signature">Oluwatobi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AUDIO -->
+  <audio id="bgMusic" src="blue.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
